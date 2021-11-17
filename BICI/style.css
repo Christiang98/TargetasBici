@@ -1,0 +1,123 @@
+@font-face {
+font-family:prisma;
+  src: url(./Fuente/Prisma.ttf);
+}
+@font-face {
+  font-family:resglise ;
+  src: url(./Fuente/Sketchzone.otf);
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+img{
+  width:225px;
+}
+body{
+  position: relative;
+  width: 35%;
+  min-height:100vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  background-color: #24252A;
+}
+.card{
+  width: 280px;
+  height: 350px;
+  background-image:url(./img/fondo\ css.jpg) ;
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  padding: 80px 30px;
+  box-shadow: 0px 0px 40px rgba(200, 200, 200, 0.493);
+  color: #11b94c;
+  font-family:"resglise";
+  
+  
+}
+.card .imagen-mostrada{
+  width: 257px;
+  transform: rotate(-15deg); /*20DEG*/
+}
+.card .titulo{
+  margin-top: 40px; /**80PX*/
+  width: 100%;
+  font-size: 25px;
+}
+.card .colores{
+  margin-top: 40px;
+  display: inline-flex;
+  width: 100%;
+  justify-content: flex-start;
+  align-items: center;
+}
+.card .colores span{
+   width: 28px;
+   height: 28px;
+   border-radius: 50%;
+   background-color: red;
+   margin-right: 20px;
+   cursor: pointer;
+}
+.card .colores span:nth-child(2){
+  background-color: rgb(253, 229, 17);
+}
+.card .colores span:nth-child(3){
+  background-color: black;
+}
+.card .rodados-contenedor{
+  display: flex;
+  width: 100%;
+  margin-top: 20px;
+  flex-direction: column;
+}
+.card .rodados{
+  margin-top: 20px;
+  display: flex;
+  margin-right: 20px;
+  justify-content: space-between;
+}
+.card .rodados .rodado{
+  background-color:rgb(18, 36, 71);
+  padding: 10px;
+  border-radius: 1000px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 20px;
+  font-family:"prisma";
+}
+.card .rodados .rodado:hover{
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.card .rodados .rodado.active{
+  background-color: #323232;
+  color: #F2F2F2;
+  transform: translateY(-20px);
+  
+}
+.imagenes{
+  display: flex;
+}
+.imagenes img{
+  transform: rotate(-25deg);
+  transition: all 0.3s ease;
+  position: relative;
+  cursor: pointer;
+} 
+.precio{
+  background: #11b94c;
+  padding: 10px 20px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 200;
+  color: #fff;
+  border-radius: 7px;
+  margin-top: 20px;
+  margin-bottom:5px ;
+ box-shadow: -10px 20px 15px -10px rgba(17, 233, 91, 0.3);
+ font-family: 'Times New Roman', Times, serif;
+}  
